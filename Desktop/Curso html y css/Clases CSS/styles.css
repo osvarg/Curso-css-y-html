@@ -1,5 +1,6 @@
 li {
     color: gray;
+    font-family: 'Tac One';
     text-transform: capitalize;
     text-align: start;
     text-decoration: overline;
@@ -27,5 +28,7 @@ p {
     text-align: justify;
 }
 a{
+    font-family: "Nunito";
     text-decoration: none;
+    font-weight: 900;
 }
