@@ -1,12 +1,31 @@
 li {
     color: gray;
+    text-transform: capitalize;
+    text-align: start;
+    text-decoration: overline;
+    line-height: 1.5;
 }
 span {
     color: red;
+    text-decoration: underline overline line-through;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+
 }
 .faltante {
     color: red;
 }
 #ingrediente-secreto {
     color: blue;
+}
+p {
+    color: purple;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: justify;
+}
+a{
+    text-decoration: none;
 }
