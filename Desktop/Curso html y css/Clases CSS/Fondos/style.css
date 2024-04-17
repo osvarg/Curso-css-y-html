@@ -1,0 +1,26 @@
+body {
+    background: #0f0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box {
+    width: 100%;
+    height: 200px;
+    margin: 04;
+    background: url(https://img.freepik.com/foto-gratis/retrato-abstracto-ojo-elegancia-mujeres-jovenes-generado-ai_188544-9712.jpg?t=st=1713190797~exp=1713194397~hmac=33533c9507104ce4d47111ccbddd0b0f4fa5c0940e1a144bde2515b9d9b40653&w=900) center / cover fixed #000;
+}
+.box2 {
+    width: 400px;
+    height: 150px;
+    margin: 20px;
+    background-color: #6fa;
+    background-image: url(https://i.blogs.es/ceda9c/dalle/450_1000.jpg);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.opaco {
+    height: 100%;
+    width: 100%;
+    background: #000a;
+}
