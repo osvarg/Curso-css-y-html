@@ -3,6 +3,7 @@ body {
     background-color: #444;
     color: #eee;
     font-family: sans-serif;
+    background: linear-gradient(to bottom, #333, #000);
 }
 h2 {
     color: #ededed;
@@ -36,6 +37,7 @@ input, textarea, select{
     background-color: transparent;
     color: #eee;
     border-radius: 4px;
+    margin-bottom: 30px;
 }
 option {
     background-color: #333;
@@ -52,4 +54,10 @@ label {
 .checkbox {
     width: auto;
     height: 10px;
+}
+fieldset {
+    border-radius: 5px;
+    border: 1px solid #444;
+    margin: 5px 20px;
+    padding: 0 10px 15px 10px;
 }
