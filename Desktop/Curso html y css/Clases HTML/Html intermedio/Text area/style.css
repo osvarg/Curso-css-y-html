@@ -16,7 +16,7 @@ h2 {
     font-size: 22px;
 }
 form {
-    background: #333;
+    background: #222;
     padding: 40px 0;
     max-width: 70vw;
     margin: auto;
@@ -60,4 +60,8 @@ fieldset {
     border: 1px solid #444;
     margin: 5px 20px;
     padding: 0 10px 15px 10px;
+}
+a {
+    color: #69f;
+    text-decoration: none;
 }
