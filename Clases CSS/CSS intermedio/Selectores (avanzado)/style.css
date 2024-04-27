@@ -1,9 +1,25 @@
-img[src="Instagram_icon.png"] {
-    width: 50%;
+/* Selector de atributo (img) y selección conjunta */
+h1, img[src="Instagram_icon.png"] {
+    width: 25%;
+    background-color: #00f;
 }
+
+/* Selección descendente */
 ul li {
     color: #0b0;
 }
-ul strong {
-    color: #0ad;
+
+/* Selector por hijo directo */
+li > strong {
+    color: #00f;
+}
+
+/* Selector de hermanos generales */
+h1 ~ p {
+    color: #0bd;
+}
+
+/* Selector por hermano adyacente */
+h1 + p {
+    color: #f00;
 }
