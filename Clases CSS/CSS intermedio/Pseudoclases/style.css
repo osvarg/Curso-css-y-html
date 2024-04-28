@@ -1,0 +1,86 @@
+:root {
+    background-color: #ccc;
+}
+
+h1 {
+    color: #48e;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+/* Reactivo al mouse */
+h1:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Cuando se presiona el h1 */
+h1:active {
+    background-color: #999;
+    color: #fff;
+}
+
+/* Excluir un elemento */
+.class, li:not(.elem-5) {
+    background-color: #999;
+}
+
+/* Seleccionando el primer li */
+li:first-child {
+    color: red;
+}
+
+/* Seleccionando patrones de li */
+li:nth-child(2n) {
+    color: aqua;
+    background-color: #000;
+}
+
+/* Seleccionar un li en específico */
+li:nth-child(2) {
+    color: green;
+}
+
+/* Seleccionando el ultimo li*/
+li:last-child {
+    color: blue;
+}
+
+div {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+/* Lo que pasa si el div esta completamente vacío */
+div:empty {
+    border: none;
+}
+
+input[type="checkbox"] {
+    margin: 20px;
+}
+
+/* Funciona si la caja esta respondida */
+input[type="checkbox"]:checked {
+    margin: 0px;
+}
+
+/* Enlaces no visitados */
+a:link {
+    color: red;
+}
+
+/* Enlaces visitados */
+a:visited{
+    color: green;
+}
+
+input:invalid {
+    color: red;
+    background-color: grey;
+}
+
+input:valid {
+    color: greenyellow;
+    background-color: grey;
+}
