@@ -1,0 +1,18 @@
+ul :is(.elemento1, .elemento4, .elemento9) {
+    color: red;
+}
+
+/* Igual que el is pero termina teniendo menor prioridad */
+ul :where(.elemento1, .elemento4, .elemento9) {
+    color: blue;
+}
+
+/* Funciona con la condición de que este el elemento que se pide */
+ul:has(.elemento1) {
+    background-color: aqua;
+}
+
+/* Modificar el fondo en caso de que despues del elemento 10 haya un parrafo*/
+#elemento10:has(+p) {
+    background-color: #fff;
+}
