@@ -1,0 +1,15 @@
+body {
+    color: green;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: red;
+    color: inherit;
+    font-family: inherit;
+}
+
+p {
+    color: blue ;
+    color: initial;
+}
