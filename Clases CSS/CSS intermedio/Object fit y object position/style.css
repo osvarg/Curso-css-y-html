@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+img {
+    width: 400px;
+    height: 100px;
+    /* none no ajusta la imagen*/
+    /* scale-down se queda con la escala mas pequeña*/
+    /* contain sirve para */
+    object-fit: scale-down;
+    /* object-position solo cambia la posicion segun lo que se pide */
+    object-position: 20px;
+    border: 2px solid #000;
+    margin-top: 50px;
+    margin-left: 50px;
+}
