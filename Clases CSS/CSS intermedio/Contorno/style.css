@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #bbb;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: #f00;
+    margin: auto;
+    margin-top: 50px;
+    border: 5px solid #000;
+    overflow: auto;
+    padding: 10px;
+    /* outline es basicamente lo mismo que un borde pero no ocupa ningun tipo de espacio*/
+    outline: 10px solid #0f0;
+    outline-offset: 10px;
+    outline-style: double;
+}
+
+input {
+    margin: 50px;
+    border: none;
+    border-top: 3px solid #000;
+    outline: 3px solid blue;
+    outline-offset: 5px ;
+    transition: outline .3s, outline-offset .3s;
+    padding: 6px;
+
+}
+
+input:focus {
+    border-color: blue;
+    color: blue;
+}
+
+/* focus-visible sirve para modificar lo visible pero no afectar lo accesible de una web*/
+input:focus-visible {
+    outline:none
+}
