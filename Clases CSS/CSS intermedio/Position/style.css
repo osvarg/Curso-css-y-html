@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    background-color: #ededed;
+}
+/* Poner 0 en top, left, right o bottom lo pone al límite de la página */
+
+.contenedor {
+    border: 2px solid black;
+    margin: 30px 50px;
+    background-color: #fff;
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #db7;
+    color: #fff;
+    z-index: 10;
+}
+
+.box--blue
+{
+    background-color: #48e;
+    top: 20px;
+    left: 20px;
+    z-index: 20;
+    position: absolute;
+}
+
+.box:first-child {
+    background-color: #e53;
+    z-index: 30;
+    position: relative;
+    top: -20px;
+}
