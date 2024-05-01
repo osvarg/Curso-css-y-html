@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    box-sizing: border-box;
+    background: #bbb;
+}
+
+.box {
+    width: 240px;
+    height: 240px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff;
+    border: 1px solid #000;
+    /* pre escribe las cosas tal cual aparecen en el editor de texto */
+    /* pre-wrap funciona de la misma manera que pre pero esta contenido por la caja*/
+    white-space: pre-wrap ;
+    /* pretty ajusta el texto minimamente */
+    text-wrap: pretty;
+}
+
+h1 {
+    margin: 0;
+    /* balance hace mas simétrico el elemento */
+    text-wrap: balance;
+}
