@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    margin-top: 50px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    /* Lo mejor es poner las cosas a las que se quiere transicion por propiedad en específico al usar transition-property */
+    /* Podemos usar cubic-bezier o el mismo chrome para la curva de movimiento*/
+    transition: left 1s cubic-bezier(.72,0,.26,1) 2s;
+    color: red;
+    position: relative;
+    left: 0;
+}
+
+body:hover .box {
+    left: 600px;
+}
