@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flexbox {
+    display: flex;
+    /* row es para tener las cajas de manera horizontal 
+    row-reverse es para que esten en contra de la dirección del texto
+    column es para que esten en vertical
+    column-reverse es para que este de abajo hacia arriba*/
+    flex-direction: row-reverse;
+    /* rtl (right-to-left)
+    ltr (left-to-right) */
+    direction: rtl;
+}
+
+.flex-item {
+    height: 60px;
+    width: 150px;
+    background-color: #911;
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+}
+
+.flex-item:last-child {
+    background-color: black;
+}
