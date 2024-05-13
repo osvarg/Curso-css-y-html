@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #198;
+    color: #fff;
+}
+
+h1{
+    box-sizing:border-box;
+}
+
+div, header, nav, ul, h1, h2, p, img {
+    box-sizing: border-box;
+}
+
+/* HEADER SECTION */
+
+.header {
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-image: url(abstract-watercolor-texture-wallpaper-background-free-vector.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__overlay{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #1986;
+    position: absolute;
+    z-index: 1;
+}
+
+.header__item-container {
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    max-width: 80%;
+}
+
+.header__item-container p {
+    text-wrap: pretty;
+}
+
+.header__img {
+    min-width: 200px;
+    max-width: 60%;
+    border-radius: 50%;
+    border: 6px solid #fff ;
+    margin: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.2rem;
+    text-wrap: balance;
+    overflow: wrap;
+}
+
+/* NAVBAR SECTION */
+
+.nav{ 
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 6px 20px;
+    position: sticky;
+    top:0;
+    margin-bottom: 10px;
+    box-shadow: 0 0 25px #333;
+}
+
+.nav__ul{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+    padding: 0;
+}
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__logo-container, .nav__ul-container{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav__ul-container {
+    flex-grow: 4;
+    align-items:center
+}
+
+.nav__link {
+    margin: auto;
+    color: #198;
+    text-decoration: none;
+    display: inline-block;
+    padding: 26px 10px;
+    margin: 6px;
+    transition: background-color 0.2s, border-radius 0.2s, outline 0.3s, outline-offset 0.3s;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.nav__link:hover {
+    background-color: #1985;
+    border-radius: 20px;
+    outline: 2px solid #198a;
+    outline-offset:-5px;
+}
+
+.link--login{
+    background-color: #198;
+    color: #fff;
+    border-radius: 20px;
+    padding: 26px 24px;
+    margin-left: 10px;
+}
+
+.link--login:hover {
+    background-color: #176;
+    outline: none;
+}
+.nav__logo {
+    width: 80px;
+}
+
+/* MAIN SECTION */
+main {
+    max-width: 800px;
+    margin: auto;
+    font-size: 30px;
+    text-wrap: pretty;
+    text-align: justify;
+}
