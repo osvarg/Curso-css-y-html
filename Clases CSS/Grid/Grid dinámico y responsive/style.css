@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #999;
+}
+
+body, div {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    /* auto-fit rellena la pagina entera
+    auto-fill pone nuevas columnas aunque no existan*/
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr)) ;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+    margin-top: 30px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #48e;
+    font-size: 30px;
+    max-width: 100%;
+    border-radius: 16px;
+    margin: auto;
+}
+
+.grid-item:hover {
+    opacity: 0.7;
+}
+
+
+@media  screen and (max-width:500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
