@@ -6,8 +6,8 @@ body {
 .grid {
     display: grid;
     height: 80vh;
-    grid-template-columns: 4fr 2fr 1fr;
-    grid-template-rows:auto auto;
+    grid-template-columns: repeat(2, minmax(100px,300px)) 1fr;
+    grid-template-rows:repeat(2,200px) 1fr;
 }
 
 .grid-item {
@@ -16,6 +16,5 @@ body {
     padding: 10px;
     font-size: 20px;
     color: #fff;
-    display: inline-block;
 }
 
