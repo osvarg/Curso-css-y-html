@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #999;
+}
+
+body, div {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px,1fr)) ;
+    /* flow: dense rellena huecos vacíos pero es sin importar el orden de elementos */
+    grid-auto-flow: dense;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    margin-top: 30px;
+    gap: 10px;
+    padding: 10px;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.grid-item {
+    background-color: #48e;
+    font-size: 30px;
+    border-radius: 16px;
+    background-image: url("17104497642771.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(10) {
+    grid-column: span 4;
+
+}
+
+.grid-item:hover {
+    opacity: 0.7;
+}
+
+
+@media  screen and (max-width:500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
