@@ -1,0 +1,47 @@
+body, div {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,50px);
+    gap: 10px;
+    padding: 10px;
+    /* los self como self-start toman en cuenta las posiciones de cada uno y las normales son solo mas generales*/
+    /* Solo modifica la posición dentro de las celdas */
+    /* stretch es la función por defecto */
+    justify-items: stretch;
+    /* content sirve para mover toda la celda dentro del grid
+    sirve de la misma manera que el de flex*/
+    justify-content: space-around;
+    /* align hace lo mismo que justify pero en el eje vertical*/
+    align-items: stretch;
+    align-content: space-evenly;
+    height: 350px;
+    border: 2px solid #000;
+    margin: 20px;
+}
+
+.grid-item:first-child {
+    background-color: #e66;
+    /*self sirve para solo modificar a este valor en específico*/
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.grid-item {
+    color: #fff;
+    background-color: #48e;
+    font-size:30px;
+    max-width: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding: 20px;
+}
+
+.grid-item:hover {
+    opacity: 0.74;
+}
