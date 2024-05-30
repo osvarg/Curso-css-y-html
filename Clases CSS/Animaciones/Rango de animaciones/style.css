@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+.crecedor {
+    height: 100vh;
+}
+
+.box {
+    view-timeline: --cajita block;
+    height: 400px;
+    background-color: #48e;
+    padding: 20px;
+    animation: llenar-barra both;
+    animation-timeline: --cajita;
+    animation-timing-function: linear;
+    /* cover funciona directamente cuando el elemento ya este en pantalla
+    contain funciona cuando el elemento esta completamente presente en la pantalla */
+    animation-range-start:cover 10%;
+    animation-range-end: contain 90%;
+    /* Para cualquier prueba necesaria ir a view progress timeline range visualizer*/
+}
+
+
+@keyframes llenar-barra {
+    from {
+        width: 0;
+    }
+    
+    to {
+        width: 100%;
+        background-color: #f33;
+    }
+}
