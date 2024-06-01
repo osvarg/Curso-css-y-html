@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    background-color: #48e;
+    flex-direction: column;
+}
+
+.box {
+    background-color: #48e;
+    margin: auto;
+    padding: 20px 50px;
+    border: 4px solid #000;
+    width: fit-content;
+}
+
+.box:first-child {
+    transform: skew(20deg) translate(200px);
+    transition: transform 1s;
+}
+
+.box:first-child:hover {
+    transform: skew(40deg);
+}
+
+.box:last-child {
+    rotate: 0deg;
+    transition: rotate 1s;
+}
+
+.box:last-child:hover {
+    rotate: 360deg;
+}
