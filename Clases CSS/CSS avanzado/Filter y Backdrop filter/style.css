@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+}
+
+.box {
+    background-color: #48e;
+    margin: auto;
+    padding: 20px 50px;
+    /* Los filtros se aplican al contenedor y a los hijos igualmente */
+    filter: invert(1) drop-shadow(0 0 15px #000);
+}
+
+img {
+    position: relative;
+    top: -100px;
+    /* Modifica un fondo que solamente tiene el mismo elemento*/
+    backdrop-filter: hue-rotate(-100deg);
+    border: 4px solid #000;
+}
