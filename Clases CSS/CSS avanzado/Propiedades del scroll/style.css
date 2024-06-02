@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-principal: #48e;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    font-size: 30px;
+    padding: 0 40px;
+    width: 50vw;
+    font-size: clamp(2.4rem,2.2vw,4rem);
+    border: 6px solid #000;
+    height: 100vh;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-color: #48e #fff;
+    scrollbar-width: thin;
+}
