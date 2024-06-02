@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: #48e;
+    display: grid;
+    place-content: center;
+    color: #fff;
+    margin: 120px auto;
+    padding: 0 40px;
+    font-size: clamp(2.4rem,2.2vw,4rem);
+    border: 6px solid #000;
+}
