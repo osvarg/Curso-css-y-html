@@ -1,0 +1,55 @@
+:root {/* root es lo mas recomendable para aplicar una variable a la pagina entera */
+    --color-principal:#f00
+}
+
+body {
+    --color-principal: #f44;
+    --tamaño-principal: 2.4rem;
+    margin: 0;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    /* Las variables tambien se delimitan por ciertas areas segun donde se pongan */
+    --color-principal: #48e;
+    place-content: center;
+    color: #fff;
+    margin: 120px auto;
+    font-size: 30px;
+    padding: 0 40px;
+    font-size: clamp(calc(var(--tamaño-principal)*4),2.2vw,4rem);
+    border: 6px solid #000;
+}
+
+.box:first-child {
+    background-color: var(--color-principal);
+}
+
+.box:nth-child(2) {
+    color: var(--color-principal);
+    border: 6px solid var(--color-principal);
+}
+
+.box p {
+    --color-principal:#4f4;
+    color: var(--color-principal);
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 0;
+}
+
+body > p {
+    color: var(--color-principal);
+    font-size: 60px;
+}
+
+@property --color-principal {
+    syntax: "<color>";
+}
