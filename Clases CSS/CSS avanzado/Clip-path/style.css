@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+    /* usar clip-path generator*/
+    clip-path: ellipse(50% 100%);
+    border: 10px solid #ff0101;
+}
