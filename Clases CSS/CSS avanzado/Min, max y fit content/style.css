@@ -1,0 +1,34 @@
+.container {
+    width: 200px;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+/* Estilos para el elemento */
+.element {
+    width: min-content; /* Cambia a max-content o fit-content según necesites */
+    background-color: coral;
+    padding: 5px;
+}
+
+.container2 {
+    width: 200px;
+    background-color: lightgreen;
+    padding: 10px;
+}
+.element2 {
+    width: max-content;
+    background-color: yellow;
+    padding: 5px;
+}
+
+.container3 {
+    width: 200px;
+    background-color: lightpink;
+    padding: 10px;
+}
+.element3 {
+    width: fit-content;
+    background-color: lavender;
+    padding: 5px;
+}
